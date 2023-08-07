@@ -7,7 +7,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "format": "npx prettier . --write"
   },
   "dependencies": {
     "@astrojs/mdx": "^0.19.7",
@@ -16,5 +17,10 @@
     "@astrojs/tailwind": "^4.0.0",
     "astro": "^2.10.1",
     "tailwindcss": "^3.3.3"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.8",
+    "prettier-plugin-astro": "^0.9.1",
+    "prettier-plugin-tailwindcss": "^0.4.1"
   }
 }
