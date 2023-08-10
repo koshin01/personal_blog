@@ -20,7 +20,7 @@ const posts = (await getCollection("blog")).sort(
   <body>
     <Container>
       <Header />
-      <main class = "lg:mx-auto">
+      <main class="lg:mx-auto">
         <section>
           <ul class="grid gap-[4.5rem] md:grid-cols-2 md:gap-4">
             {
@@ -30,7 +30,7 @@ const posts = (await getCollection("blog")).sort(
                     <img
                       src={post.data.heroImage}
                       alt=""
-                      class = "object-cover h-[15.1875rem]"
+                      class="h-[15.1875rem] object-cover"
                     />
                     <div class="prose lg:prose-lg">
                       <h3>{post.data.title}</h3>
