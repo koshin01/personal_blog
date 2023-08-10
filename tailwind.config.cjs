@@ -2,7 +2,14 @@
 module.exports = {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        primary: "#111827",
+        secondary: "#737373",
+        accent: "#FFF056",
+      },
+    },
   },
-  plugins: [],
+
+  plugins: [require("@tailwindcss/typography")],
 };
