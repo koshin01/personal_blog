@@ -28,12 +28,11 @@ const posts = (await getCollection("blog")).sort(
                 <li>
                   <a class="grid gap-4" href={`/blog/${post.slug}/`}>
                     <img
-                      width={720}
-                      height={360}
                       src={post.data.heroImage}
                       alt=""
+                      class = "object-cover h-[15.1875rem]"
                     />
-                    <div class="prose">
+                    <div class="prose lg:prose-lg">
                       <h3>{post.data.title}</h3>
                       <FormattedDate date={post.data.pubDate} />
                     </div>
