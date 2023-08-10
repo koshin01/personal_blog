@@ -22,7 +22,7 @@ const posts = (await getCollection("blog")).sort(
       <Header />
       <main>
         <section>
-          <ul class="grid gap-[4.5rem]">
+          <ul class="grid gap-[4.5rem] md:grid-cols-2 md:gap-4">
             {
               posts.map((post) => (
                 <li>
