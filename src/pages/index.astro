@@ -33,7 +33,7 @@ const posts = (await getCollection("blog")).sort(
                       class="h-[15.1875rem] object-cover"
                     />
                     <div class="prose lg:prose-lg">
-                      <h3>{post.data.title}</h3>
+                      <h3 class = "hover:text-hoveredPrimary">{post.data.title}</h3>
                       <FormattedDate date={post.data.pubDate} />
                     </div>
                   </a>
