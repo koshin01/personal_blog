@@ -1,17 +1,25 @@
 ---
-import type { CollectionEntry } from "astro:content";
 import BaseHead from "../components/BaseHead.astro";
 import Header from "../components/Header.astro";
 import Container from "../components/container.astro";
 import Footer from "../components/Footer.astro";
 import FormattedDate from "../components/FormattedDate.astro";
 
+interface Props {
+  title: string;
+  description: string;
+  image: string;
+  pubDate: Date;
+  updatedDate?: Date;
+  heroImage: string;
+}
+
 const { title, description, image, pubDate, updatedDate, heroImage } = Astro.props;
 ---
 
 <html lang="ja">
   <head>
-    <BaseHead title={title} description={description} image = {image}/>
+    <BaseHead title={title} description={description} image={image}/>
   </head>
 
   <body>
