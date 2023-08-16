@@ -26,7 +26,7 @@ const posts = (await getCollection("blog")).sort(
             {
               posts.map((post) => (
                 <li>
-                  <a class="grid gap-4" href={`/blog/${post.slug}/`}>
+                  <a class="grid gap-4" href={`/post/${post.slug}/`}>
                     <img
                       src={post.data.heroImage}
                       alt=""
