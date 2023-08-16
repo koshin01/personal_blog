@@ -1,6 +1,7 @@
 ---
 title: "Soulbound Token をコーディング"
 description: "概念の理解から、コーディング、デプロイまで行います。"
+image: "/coding_sbt.jpg"
 pubDate: "Aug 15 2023"
 heroImage: "/codingSBT.png"
 ---
