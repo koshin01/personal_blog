@@ -35,20 +35,16 @@ const { title, description, image, pubDate, updatedDate, heroImage } = Astro.pro
             }
           </div>
           <div>
-            <div>
-              <div>
-                <FormattedDate date={pubDate} />
-                {
-                  updatedDate && (
-                    <div>
-                      Last updated on <FormattedDate date={updatedDate} />
-                    </div>
-                  )
-                }
-              </div>
+              <FormattedDate date={pubDate} />
+              {
+                updatedDate && (
+                  <div>
+                    Last updated on <FormattedDate date={updatedDate} />
+                  </div>
+                )
+              }
               <h1>{title}</h1>
               <hr />
-            </div>
             <slot />
           </div>
         </article>
