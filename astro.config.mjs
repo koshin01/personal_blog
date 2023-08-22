@@ -8,5 +8,5 @@ import preact from "@astrojs/preact";
 // https://astro.build/config
 export default defineConfig({
   site: "https://blog.dbkoshin.com",
-  integrations: [mdx(), sitemap(), tailwind(), preact()]
+  integrations: [mdx(), sitemap(), tailwind(), preact()],
 });
