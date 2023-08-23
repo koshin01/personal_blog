@@ -29,7 +29,7 @@ const posts = (await getCollection("blog")).sort(
           <ul class="grid gap-[4.5rem] md:grid-cols-2 md:gap-4">
             {
               posts.map((post) => (
-                <li class="transform rounded-lg transition-transform md:hover:scale-105">
+                <li class="duration-400 transform rounded-lg transition-transform ease-in-out md:hover:scale-105">
                   <a class="grid gap-4" href={`/post/${post.slug}/`}>
                     <img
                       src={post.data.heroImage}
@@ -49,6 +49,11 @@ const posts = (await getCollection("blog")).sort(
       </main>
       <Footer />
     </Container>
-    <!-- Cloudflare Web Analytics --><script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "41d00f3f7e3f410da7a3b89839f5ce77"}'></script><!-- End Cloudflare Web Analytics -->
+    <!-- Cloudflare Web Analytics -->
+    <script
+      defer
+      src="https://static.cloudflareinsights.com/beacon.min.js"
+      data-cf-beacon='{"token": "41d00f3f7e3f410da7a3b89839f5ce77"}'
+    ></script><!-- End Cloudflare Web Analytics -->
   </body>
 </html>
